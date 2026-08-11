@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Wildfire Telemetry Ground Station</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header><div><p class="eyebrow">Ground station</p><h1>Wildfire telemetry</h1></div><span id="status">Waiting for data</span></header>
+    <section class="grid" aria-label="Latest sensor readings">
+      <article><small>Air temperature</small><strong id="temperature">—</strong></article>
+      <article><small>Object temperature</small><strong id="object-temperature">—</strong></article>
+      <article><small>Humidity</small><strong id="humidity">—</strong></article>
+      <article><small>Pressure</small><strong id="pressure">—</strong></article>
+    </section>
+    <div id="map" aria-label="Latest drone position"></div>
+    <p class="note">Prototype telemetry only. Do not use for emergency response or flight operations.</p>
+  </main>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
