@@ -1,0 +1,4 @@
+node_modules/
+data/*.ndjson
+arduino_code/config.h
+.env
